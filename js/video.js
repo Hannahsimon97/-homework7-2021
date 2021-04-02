@@ -63,5 +63,5 @@ document.querySelector("#slider").addEventListener("click", function() {
 	console.log('Changing volume');
 	console.log(this.value);
 	video.volume = this.value /100;
-	document.querySelector("volume").innerHTML=video.volume * 100 + "%";
+	document.querySelector("#volume").innerHTML=video.volume * 100 + "%";
 });
