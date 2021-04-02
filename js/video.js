@@ -38,7 +38,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	console.log('Original location',video.currentTime);
+	console.log("Skip to",video.currentTime);
 	video.currentTime +=15;
 	if (video.currentTime>=video.duration){
 		video.currentTime =0
@@ -52,10 +52,10 @@ document.querySelector("#skip").addEventListener("click", function() {
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted === false) {    
 		video.muted = true;
-		document.querySelector("#mute").textContent = "unmute"
+		document.querySelector("#mute").innerHTML = "Unmute"
 	} else {
 		video.muted = false;
-		document.querySelector("#mute").textContent = "mute"
+		document.querySelector("#mute").innerHTML = "Mute"
 	}
 });
 
